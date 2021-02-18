@@ -1,0 +1,80 @@
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 150px;
+}
+
+.input {
+    width: 70%;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(105, 92, 221);
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input::placeholder {
+    color: #fff;
+    opacity: .3;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    box-shadow: 0 0 0 30px rgb(142, 137, 194) inset !important;
+    -webkit-text-fill-color: #fff!important;
+}
+
+.button {
+    width: 25%;
+    min-width: 130px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(105, 92, 221);
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    margin: 0 20px;
+}
+
+.button:hover {
+    transition: .3s ease-in;
+    opacity: 0.8;
+}
+
+.button:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .form {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 100px;
+    }
+    
+    .input {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .button {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .form {
+        padding: 10px 30px;
+    }
+}
